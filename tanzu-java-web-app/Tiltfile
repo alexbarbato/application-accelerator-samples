@@ -9,7 +9,6 @@ k8s_custom_deploy(
                " --source-image " + SOURCE_IMAGE +
                " --namespace " + NAMESPACE +
                " --yes " +
-               "--registry-ca-cert C:\\Gary\\Projects\\TKG\\samples\\harbor.nvspdren.navy.mil.crt " +
                " > NUL" +
                " && tanzu apps workload get another-java-project --namespace " + NAMESPACE + " -o yaml",
     delete_cmd="tanzu apps workload delete -f config/workload.yaml --namespace " + NAMESPACE + " --yes",
