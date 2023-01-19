@@ -5,6 +5,7 @@ metadata:
     app.kubernetes.io/part-of: another-java-project
     apps.tanzu.vmware.com/workload-type: web
   name: another-java-project
+  namespace: boats
 spec:
   build:
     env:
@@ -18,5 +19,5 @@ spec:
     git:
       ref:
         branch: main
-      url: https://github.com/GaryPlattenburg/application-accelerator-samples
+      url: https://github.com/alexbarbato/application-accelerator-samples
     subPath: tanzu-java-web-app
